@@ -23,7 +23,7 @@ export async function POST(request: Request) {
   if (body.format === 'DATABASE') {
     return NextResponse.json(boosters, {
       headers: {
-        'filename': `swu-export-boosters-${new Date().toISOString()}.json`,
+        'filename': `altered-export-boosters-${new Date().toISOString()}.json`,
       },
     });
   } else {
